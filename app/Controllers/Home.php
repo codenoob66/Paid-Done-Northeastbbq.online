@@ -18,6 +18,10 @@ class Home extends BaseController
     {
         $userEmail = $this->request->getPost('email');
         $userMessage = $this->request->getPost('message');
+
+        if (empty($userEmail) || empty($userMessage)) {
+            return redirect()->back()->withInput()->with('error', 'Please fill in all fields.');
+        }
         
         $email = service('email');
         $email->setFrom('info@northeastbbq.online', 'Website contact form');
@@ -27,7 +31,7 @@ class Home extends BaseController
         $email->setMessage($userMessage);
         if($email->send())
             {
-                return redirect()->to('/')->with('sucess', 'test message!');
+                return redirect()->to('/')->with('success', 'Thank you for your inquiry. We will get back to you soon!');
             }
                 return "<pre>" . print_r($email->printDebugger(['headers', 'subject', 'body']), true) . "</pre>";
     }

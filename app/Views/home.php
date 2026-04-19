@@ -52,6 +52,18 @@
     </div>
 
     <div class="col-12 col-md-6 mx-md-auto">
+      <?php if (session()->getFlashdata('success')): ?>
+          <div class="alert alert-success">
+              <?= session()->getFlashdata('success') ?>
+          </div>
+      <?php endif; ?>
+
+      <?php if (session()->getFlashdata('error')): ?>
+          <div class="alert alert-danger">
+              <?= session()->getFlashdata('error') ?>
+          </div>
+      <?php endif; ?>
+
       <form method="post" action="/send" class="p-3">
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Email address</label>
