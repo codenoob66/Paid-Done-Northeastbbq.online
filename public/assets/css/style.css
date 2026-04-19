@@ -1,0 +1,156 @@
+* {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+}
+
+.logo {
+  width: 100px;
+  border-radius: 8px; /* Added subtle curve to logo */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.c-img {
+  height: 650px;
+  object-fit: cover;
+  border-radius: 0 0 16px 16px; /* Soften the edges of the hero carousel */
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+body {
+  background-color: #cddfbf;
+  color: #2c3e20; /* Improve contrast slightly */
+}
+
+.bg-primary {
+  background-color: #cddfbf !important;
+}
+
+.bg-footer {
+  background-color: #171717 !important;
+}
+
+.italic-font {
+  font-style: italic;
+}
+
+.s-header-font {
+  font-family: "Space Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-header-font {
+  font-family: "Space Mono", monospace;
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Navbar styling improvements */
+.navbar {
+  padding: 1rem 0;
+  background: rgba(205, 223, 191, 0.95) !important; /* Slight translucency */
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  z-index: 1030;
+}
+
+.nav-link {
+  transition: all 0.3s ease;
+  padding-bottom: 2px;
+}
+
+.nav-link:hover {
+  transform: translateY(-2px);
+  text-shadow: 0 2px 4px rgba(214, 26, 60, 0.3);
+}
+
+/* Menu items */
+.red-background {
+  background-color: #d61a3c;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(214, 26, 60, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 35px; /* Added margin to make room for the pop-out image */
+}
+
+.red-background:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(214, 26, 60, 0.3);
+}
+
+.food-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: -20px; /* Pull image up slightly to pop out */
+  border: 4px solid #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  background: #fff;
+}
+
+/* Adjust layout spacing inside menu cards */
+.red-background { padding-bottom: 15px !important; }`n.red-background p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.carousel-indicators {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.carousel-indicators::-webkit-scrollbar {
+  display: none;
+}
+
+p {
+  margin: 0;
+  line-height: 1.7; /* Improve readability */
+}
+
+/* Form inputs styling */
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #a8c199;
+  padding: 10px 15px;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.form-control:focus {
+  border-color: #d61a3c;
+  box-shadow: 0 0 0 0.25rem rgba(214, 26, 60, 0.25);
+}
+
+.btn-danger {
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(214, 26, 60, 0.3);
+}
+
+.btn-danger:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(214, 26, 60, 0.4);
+}
+
+/* Home page content adjustments */
+.container > p.text-center {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #3b522c;
+}
+
+iframe {
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
