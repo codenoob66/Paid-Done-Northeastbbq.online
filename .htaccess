@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # 1. Block access to hidden files and directories (like .git, .env)
+    RewriteCond %{SCRIPT_FILENAME} -d [OR]
+    RewriteCond %{SCRIPT_FILENAME} -f
+    RewriteRule "(^|/)\." - [F]
+
+    # 2. Block access to sensitive application directories and files
+    RewriteRule ^(app|tests|writable|vendor|builds|spark|composer\.json|composer\.lock|env|phpunit\.xml\.dist|README\.md) - [F,L]
+
+    # 3. Redirect all requests to the public/ folder
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteRule ^(.*)$ /public/$1 [L]
+</IfModule>
