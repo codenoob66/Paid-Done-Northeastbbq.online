@@ -97,7 +97,11 @@ body {
 }
 
 /* Adjust layout spacing inside menu cards */
-.red-background { padding-bottom: 15px !important; }`n.red-background p {
+.red-background { 
+  padding-bottom: 15px !important; 
+}
+
+.red-background p {
   margin-top: 10px;
   font-size: 1.1rem;
 }
