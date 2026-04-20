@@ -120,18 +120,4 @@
         </div>
     </div>
   </div>
-  
-  <!-- Drinks BELOW the two columns -->
-  <!-- <div class="mt-4 text-center">
-    <h3 class="fs-1">Drinks</h3>
-    <div class="text-start fs-3">
-      <ol>
-        <li>Hot Chinese Tea</li>
-        <li>Iced Lemon Tea</li>
-        <li>Soy Milk</li>
-        <li>Bottled Soft Drinks</li>
-        <li>Tsingtao</li>
-      </ol>
-    </div>
-  </div> -->
 </div>

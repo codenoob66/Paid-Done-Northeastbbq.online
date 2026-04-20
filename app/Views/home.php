@@ -64,8 +64,8 @@
           </div>
       <?php endif; ?>
 
-      <form method="post" action="/send" class="p-3">
-      <div class="mb-3">
+      <form method="post" action="/send" class="p-3 mt-4">
+      <div class="mb-4">
         <label for="exampleInputEmail1" class="form-label">Email address</label>
         <input type="email" name="email" placeholder="We would never give out your information" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
       </div>

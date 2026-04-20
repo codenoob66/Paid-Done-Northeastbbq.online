@@ -2,7 +2,7 @@
 
 <footer class="bg-footer text-white mt-auto p-4">
     <div class="container">
-        <p class="text-center">Copyright © 2024 North East BBQ. Powered by CodesByRafael.</p>
+        <p class="text-center fs-6 text-white">Copyright © 2024 North East BBQ. Powered by CodesByRafael.</p>
     </div>
 </footer>
 
